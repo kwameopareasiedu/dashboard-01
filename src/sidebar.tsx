@@ -14,7 +14,19 @@ export const Sidebar = ({ children }: ISidebar): any => {
                 <span>Tenderfarm</span>
             </p>
 
-            <div id="items">{children}</div>
+            <div id="items">
+                {children}
+
+                <div id="footer-buttons">
+                    <button className="btn">
+                        <i className="fa fa-cog" />
+                    </button>
+
+                    <button className="btn">
+                        <i className="fa fa-users" />
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };

@@ -21,5 +21,21 @@
     #items {
         flex: 1 1;
         overflow: auto;
+
+        #footer-buttons {
+            display: grid;
+            padding: 24px;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+
+            button {
+                background-color: #ffffff22;
+                padding: 15px 0;
+
+                i {
+                    color: white;
+                }
+            }
+        }
     }
 }
