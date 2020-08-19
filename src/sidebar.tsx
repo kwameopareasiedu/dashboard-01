@@ -7,14 +7,14 @@ interface ISidebar {
 
 export const Sidebar = ({ children }: ISidebar): any => {
     return (
-        <div id="sidebar">
+        <div id="sidebar" className="d-flex flex-column">
             <p id="title">
                 <i className="fas fa-info-circle" />
                 <span>&nbsp;&nbsp;</span>
                 <span>Tenderfarm</span>
             </p>
 
-            {children}
+            <div id="items">{children}</div>
         </div>
     );
 };

@@ -1,0 +1,40 @@
+#tender-notice {
+    display: grid;
+    margin: 15px 24px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff22;
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px 15px 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas:
+        "icon title"
+        "blank title"
+        "message message";
+
+    * {
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    i {
+        grid-area: icon;
+        padding: 6px 10px;
+        background-color: #ffffff22;
+        border-radius: 15px;
+        font-size: 1rem;
+    }
+
+    p#title {
+        grid-area: title;
+
+        p:last-child {
+            font-size: 0.65rem;
+            color: #b3b3b3;
+        }
+    }
+
+    p#message {
+        grid-area: message;
+    }
+}

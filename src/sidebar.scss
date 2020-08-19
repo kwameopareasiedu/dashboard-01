@@ -1,10 +1,12 @@
 #sidebar {
+    height: 100vh;
     grid-area: sidebar;
-    padding: 30px 0 15px;
+    padding: 30px 0 0;
     background: linear-gradient(180deg, #31a9c1, #155499);
+    overflow: hidden;
 
-    #title {
-        margin-bottom: 45px;
+    > #title {
+        margin-bottom: 25px;
         padding: 0 24px;
 
         * {
@@ -14,5 +16,10 @@
         i {
             margin-right: 10px;
         }
+    }
+
+    #items {
+        flex: 1 1;
+        overflow: auto;
     }
 }

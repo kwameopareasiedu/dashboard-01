@@ -2,6 +2,7 @@ import "./app.scss";
 import React from "react";
 import { Sidebar } from "./sidebar";
 import { SidebarListItem } from "./sidebar-list-item";
+import { TenderNotice } from "./tender-notice";
 
 export const App = (): any => {
     return (
@@ -17,6 +18,9 @@ export const App = (): any => {
                 <SidebarListItem iconClass="fa fa-comments" notificationCount={1}>
                     Notifications
                 </SidebarListItem>
+
+                <TenderNotice />
+
                 <SidebarListItem iconClass="fa fa-envelope">Messages</SidebarListItem>
                 <SidebarListItem iconClass="fa fa-user">Profile</SidebarListItem>
             </Sidebar>
