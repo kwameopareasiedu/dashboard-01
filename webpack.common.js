@@ -41,8 +41,8 @@ module.exports = {
                     {
                         loader: "url-loader",
                         options: {
-                            limit: 8192,
-                            name: "/assets/images/[hash].[ext]"
+                            limit: 30960,
+                            name: "/assets/[hash].[ext]"
                         }
                     }
                 ]
@@ -53,8 +53,8 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            publicPath: "/assets/audio",
-                            outputPath: "./assets/audio"
+                            publicPath: "/assets",
+                            outputPath: "./assets"
                         }
                     }
                 ]
@@ -65,12 +65,6 @@ module.exports = {
             }
         ]
     },
-    // plugins: [
-    //     new webpack.DllReferencePlugin({
-    //         context: __dirname,
-    //         manifest: require("./dist/lib/tpg.json")
-    //     })
-    // ],
     resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx", ".scss"]
     }

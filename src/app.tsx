@@ -3,6 +3,7 @@ import React from "react";
 import { Sidebar } from "./sidebar";
 import { SidebarListItem } from "./sidebar-list-item";
 import { TenderNotice } from "./tender-notice";
+import { Topbar } from "./topbar";
 
 export const App = (): any => {
     return (
@@ -24,6 +25,8 @@ export const App = (): any => {
                 <SidebarListItem iconClass="fa fa-envelope">Messages</SidebarListItem>
                 <SidebarListItem iconClass="fa fa-user">Profile</SidebarListItem>
             </Sidebar>
+
+            <Topbar />
         </div>
     );
 };
